@@ -2,50 +2,58 @@
 <html lang="pt-br ">
 <head>
     <meta charset="UTF-8" />
-    <title>Cadastro</title>
+    <title>Cadastro de cliente</title>
+    <link rel="stylesheet" href="cadastro_cliente.css">
 </head>
 <body>
-    <div id = "form">
-        <form action="#" method="post">
-            <h2>Cadastro</h2>
-            <div>
-                <!-- <label for="nome">Nome:</label> -->
-                <input id="nome" name="nome" type="text" placeholder="Nome Completo" size="50" maxlength="100" required>
+    <div class = "container">
+        
+            <div class="image">
+                <img class="img"  src="Imagens/cadastroCliente.svg" alt="imagem no cadastro">
+                <p>Cadastre-se para usar as funcionalidades do site</p>
             </div>
-            <br/>
-            <div>
-                <!--<label for="telefone">Telefone:</label>-->
-                <input id="ddd" name="ddd" placeholder="DDD" size="4" maxlength="2" required>
-                <input id="telefone" name="telefone" placeholder="Telefone" type="tel" pattern="[0-9]{10,}" size="40" maxlength="9" required>
-            </div>
-            <br/>
-            <div>
-                <!--<label for="email">E-mail:</label>-->
-                <input id="email" name="email" placeholder="E-mail" type="email" size="50" maxlength="100" required>
-            </div>
-            <br/>
-            <div>
-                <!--<label for="senha">Senha:</label>-->
-                <input id="senha" name="senha" placeholder="Senha" type="password" size="50" maxlength="50" required>
-            </div>
-            <br/>
-            <div>
-                <!--<label for="confirmarSenha">Confirmar Senha:</label>-->
-                <input id= "confirmarSenha" name="confirmar_senha" placeholder="Confirmar Senha" type="password" size="50" maxlength="50" required>
-            </div>
-            <br/>
-            <div>
-                
-                <input type="submit" value="Cadastrar">
-                
-            </div>
+            <div class="form">
+                <form action="#" method="post">
+                    <div class="title">
+                        <h2> Cadastro</h2>
+                    </div>
+                  
+                    <div class="input">
+                        <div class="input-box">
+                            <!-- <label for="nome">Nome:</label> -->
+                            <input id="nome" name="nome" type="text" placeholder="Nome Completo" size="50" maxlength="100" required>
+                        </div>
+                        <br/>
+                        <div class="input-box">
+                            <!--<label for="telefone">Telefone:</label>-->
+                            <!--<input id="ddd" name="ddd" placeholder="DDD" size="4" maxlength="2"  required>-->
+                            <input id="telefone" name="telefone" placeholder="Telefone" type="tel" pattern="[0-9]{10,}" size="50" maxlength="9" required>
+                        </div>
+                        <br/>
+                        <div class=" input-box">
+                            <!--<label for="email">E-mail:</label>-->
+                            <input id="email" name="email" placeholder="E-mail" type="email" size="50" maxlength="100" required>
+                        </div>
+                        <br/>
+                        <div class="input-box">
+                            <!--<label for="senha">Senha:</label>-->
+                            <input id="senha" name="senha" placeholder="Senha" type="password" size="50" maxlength="50"  required>
+                        </div>
+                        <br/>
+                        <div class="input-box">
+                            <!--<label for="confirmarSenha">Confirmar Senha:</label>-->
+                            <input id= "confirmarSenha" name="confirmar_senha" placeholder="Confirmar Senha" type="password" size="50" maxlength="50"  required>
+                        </div>
+                        <br/>
+                    </div>
 
-        </form>
+                    <div class=" buton">
+                       <a href="#">Cadastrar</a>
+                    </div>
+                </form>
+            </div>
 
 
     </div>
-
-    
-    
 </body>
 </html>
