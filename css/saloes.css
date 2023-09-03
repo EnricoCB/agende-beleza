@@ -1,3 +1,106 @@
-img{
-    width: 10vw;
+body{
+    background-color: #F6F6F6;
+}
+
+.imagens-secundarias{
+    width: 7rem;
+    border-radius: 8px;
+}
+
+.imagem-principal{
+    width: 36rem;
+    border-radius: 12px;
+}
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1em;
+    row-gap: 3em;
+}
+
+h1{
+    margin-bottom: 1em;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.salao{
+    text-align: center;
+}
+
+.agendamento{
+    text-align: center;
+}
+
+.mapa{
+    padding: 0 4em;
+}
+
+.titulo-avaliacao{
+    display: flex;
+    gap: 1.4em;
+    font-size: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nota-avaliacao{
+    display: flex;
+}
+
+.agendamento > h1 {
+    margin-bottom: 0px;
+}
+
+.horarios{
+    margin: 0 auto;
+}
+
+th{
+    padding:  0.8em 2.4em;
+}
+
+td > button{
+    color: #fff;
+    font-size: 1rem;
+    border: 0px;
+    padding: 12px 18px;
+    background-color: #5BDECE;
+    cursor: pointer;
+    margin-bottom: 4px;
+}
+
+.agendado{
+    background-color: #B0B0B0;
+}
+
+.button-agendar{
+    font-size: 1rem;
+    padding: 16px 54px;
+    border: 0;
+    background-color: #1F9184;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 16px;
+}
+
+#input-comentario{
+    width: 42em;
+    height: 8em;
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    border-radius: 10px;
+}
+/* 
+.comentarios{
+    padding: 0 8em; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+.container-avaliacoes{
+    display: inline-block;
+    margin: 0 auto;
 }
