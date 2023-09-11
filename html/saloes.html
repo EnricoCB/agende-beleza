@@ -4,15 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/header.css">
-<<<<<<< Updated upstream
-=======
+    <link rel="stylesheet" href="/css/saloes.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Qwitcher+Grypen:wght@700&display=swap" rel="stylesheet">
->>>>>>> Stashed changes
 </head>
 <body>
 
@@ -24,46 +21,109 @@
         </div>
         
         <nav>
-            <ul>
-                <a href="#" class="link-header"><li>Salões</li></a>
-                <a href="categoria.html" class="link-header"><li>Categorias</li></a>
-                <a href="#" class="link-header"><li>Quem Somos</li></a>
-                <a href="#" class="link-header"><li>Categorias</li></a>
+            <ul class="lista-menu-nav">
+                <a href="#" class="link-header"><li class="itens-menu">Salões</li></a>
+                <a href="categoria.html" class="link-header"><li class="itens-menu">Categorias</li></a>
+                <a href="#" class="link-header"><li class="itens-menu">Quem Somos</li></a>
+                <a href="#" class="link-header"><li class="itens-menu">Categorias</li></a>
             </ul>
+            <a href="index.html"><img src="/Imagens/menu.svg" class="img-menu" alt="Logo"></a>
         </nav>
     </header>
 
     <main>
-<<<<<<< Updated upstream
-        <section>
-            <h1>Studio Sublime</h1>
-            <img src="/Imagens/corte-homem2.jpg" alt="">
-            <div class="galeria">
-                <img src="/Imagens/corte-homem2.jpg" alt="" class="imagens-categorias">
-                <img src="/Imagens/corte-homem2.jpg" alt="" class="imagens-categorias">
-                <img src="/Imagens/corte-homem2.jpg" alt="" class="imagens-categorias">
-                <img src="/Imagens/corte-homem2.jpg" alt="" class="imagens-categorias">
-                <img src="/Imagens/corte-homem2.jpg" alt="" class="imagens-categorias">
-            </div>
-        </section>
-=======
         <div class="conteudo">
             <section class="salao">
                 <h1>Studio Sublime</h1>
-                <img src="/Imagens/corte-homem2.jpg" alt="" class="imagem-principal">
-                <div class="galeria">
-                    <img src="/Imagens/corte-homem.jpg" alt="" class="imagens-secundarias">
-                    <img src="/Imagens/corte-homem3.jpg" alt="" class="imagens-secundarias">
-                    <img src="/Imagens/corte-homem4.jpg" alt="" class="imagens-secundarias">
-                    <img src="/Imagens/corte-homem5.jpg" alt="" class="imagens-secundarias">
-                    <img src="/Imagens/corte-homem6.jpg" alt="" class="imagens-secundarias">
+                <div class="container-imagens">
+                    <img src="/Imagens/corte-homem2.jpg" alt="" class="imagem-principal">
+                    <div class="galeria">
+                        <img src="/Imagens/corte-homem.jpg" alt="" class="imagens-secundarias">
+                        <img src="/Imagens/corte-homem3.jpg" alt="" class="imagens-secundarias">
+                        <img src="/Imagens/corte-homem4.jpg" alt="" class="imagens-secundarias">
+                        <img src="/Imagens/corte-homem5.jpg" alt="" class="imagens-secundarias">
+                        <img src="/Imagens/corte-homem6.jpg" alt="" class="imagens-secundarias">
+                    </div>
                 </div>
             </section>
->>>>>>> Stashed changes
 
         <section>
             <h1>Horários</h1>
-            <button>Agendar</button>
+            <table class="horarios">
+                <tr>
+                  <th>Seg</th>
+                  <th>Ter</th>
+                  <th>Qua</th>
+                  <th>Qui</th>
+                  <th>Sex</th>
+                </tr>
+                <tr>
+                  <td><button class="agendado">07:00</button></td>
+                  <td><button>07:00</button></td>
+                  <td><button>07:00</button></td>
+                  <td><button>07:00</button></td>
+                  <td><button class="agendado">07:00</button></td>
+                </tr>
+                <tr>
+                  <td><button>07:30</button></td>
+                  <td><button class="agendado">07:30</button></td>
+                  <td><button>07:30</button></td>
+                  <td><button>07:30</button></td>
+                  <td><button>07:30</button></td>
+                </tr>
+                <tr>
+                    <td><button>08:00</button></td>
+                    <td><button>08:00</button></td>
+                    <td><button>08:00</button></td>
+                    <td><button>08:00</button></td>
+                    <td><button>08:00</button></td>
+                </tr>
+                <tr>
+                    <td><button>08:30</button></td>
+                    <td><button>08:30</button></td>
+                    <td><button>08:30</button></td>
+                    <td><button>08:30</button></td>
+                    <td><button>08:30</button></td>
+                </tr>
+                <tr>
+                    <td><button>09:00</button></td>
+                    <td><button>09:00</button></td>
+                    <td><button>09:00</button></td>
+                    <td><button>09:00</button></td>
+                    <td><button>09:00</button></td>
+                </tr>
+                <tr>
+                    <td><button>09:30</button></td>
+                    <td><button>09:30</button></td>
+                    <td><button>09:30</button></td>
+                    <td><button>09:30</button></td>
+                    <td><button>09:30</button></td>
+                </tr>
+                <tr>
+                    <td><button>10:00</button></td>
+                    <td><button>10:00</button></td>
+                    <td><button class="agendado">10:00</button></td>
+                    <td><button>10:00</button></td>
+                    <td><button>10:00</button></td>
+                </tr>
+                <tr>
+                    <td><button>10:30</button></td>
+                    <td><button>10:30</button></td>
+                    <td><button>10:30</button></td>
+                    <td><button class="agendado">10:30</button></td>
+                    <td><button>10:30</button></td>
+                </tr>
+                <tr>
+                    <td><button>10:30</button></td>
+                    <td><button>10:30</button></td>
+                    <td><button>10:30</button></td>
+                    <td><button>10:30</button></td>
+                    <td><button>10:30</button></td>
+                </tr>
+              </table>
+              <div class="container-button">
+                <button class="button-agendar">Agendar</button>
+              </div>
         </section>
 
         <section>
@@ -75,14 +135,15 @@
 
         <section>
             <h1>Comentários</h1>
-            <input type="text" placeholder="Digite seu comentário">
-            <div>
-                <h3>Anonimo</h3>
-                <p>ótimo profissional</p>
-                <img src="Imagens/Star.svg" alt="">
-                <small>17/07/2023</small>
+            <div class="container-comentarios">
+                <input type="text" placeholder="Digite seu comentário" id="input-comentario">
+                <div>
+                    <h3>Anonimo</h3>
+                    <p>ótimo profissional</p>
+                    <img src="Imagens/Star.svg" alt="">
+                    <small>17/07/2023</small>
+                </div>
             </div>
-
         </section>
     </main>
 </body>
