@@ -176,7 +176,7 @@ td > button{
 
 .container-comentario{
     width: 340px;
-    word-break: break-all;
+    word-break: keep-all;
 }
 
 .container-avaliacao{

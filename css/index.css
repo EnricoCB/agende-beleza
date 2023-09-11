@@ -22,6 +22,11 @@
     object-fit: cover;
 }
 
+.titulo-categorias{
+    font-weight: bold;
+    text-align: centergi;
+}
+
 .saloes{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -37,6 +42,14 @@
         grid-template-columns: 1fr;
     }
 }
+
+@media (max-width: 600px){
+    .saloes{
+        justify-items: start;
+    }
+}
+
+
 
 .imagens-saloes{
     width: 26rem;
@@ -86,6 +99,7 @@
 
 .card-saloes{
     display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .card-saloes > * {

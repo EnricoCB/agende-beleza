@@ -1,23 +1,31 @@
 const saloes = [
     {
         imagem: "/Imagens/corte-homem.jpg",
-        nome: "studio sublime",
+        nome: "Barbearia Black",
         nota: "5",
+        categoria1: "Cortes",
+        categoria2: "Sobrancelha",
     },
     {
-        imagem: "/Imagens/corte-homem.jpg",
-        nome: "studio sublime",
+        imagem: "/Imagens/corte-homem4.jpg",
+        nome: "Linicker",
         nota: "5",
+        categoria1: "Cortes",
+        categoria2: "Barba",
     },
     {
-        imagem: "/Imagens/corte-homem3.jpg",
-        nome: "studio sublime",
+        imagem: "/Imagens/maquiagem3.jpg",
+        nome: "Studio sublime",
         nota: "5",
+        categoria1: "Maquiagem",
+        categoria2: "Unhas",
     },
     {
-        imagem: "/Imagens/corte-homem.jpg",
-        nome: "studio sublime",
+        imagem: "/Imagens/salao.jpg",
+        nome: "Salão Modas",
         nota: "5",
+        categoria1: "Sobrancelha",
+        categoria2: "Maquiagem",
     }
 
 ]
@@ -39,8 +47,8 @@ saloes.forEach((text) => {
         </div>
 
         <div class="text-card-categoria">
-        <p>Cortes</p>
-        <p>Maquiagem</p>
+        <p>${text.categoria1}</p>
+        <p>${text.categoria2}</p>
     </div>
     </div>
     `
