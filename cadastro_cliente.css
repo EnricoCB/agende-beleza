@@ -60,7 +60,7 @@ p{
     color: #118174;
 }
 .button{
-    text-align: center;
+   text-align: center;
    width: 30%;
    border-radius: 0.5rem;
    padding: 2%;
@@ -95,14 +95,14 @@ p{
     outline: 1px solid rgb(233, 224, 224)
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 500px) {
    .container{
     width: 80%;
    }
   .form{
     padding:0.625rem;
     border-radius: 0.938rem;
-    background-color: red;
+    
    }
    .title{
     margin-top: 0.5rem;
@@ -118,6 +118,16 @@ p{
     margin-top: 8%;
    }
 }
+ @media only screen and (max-width: 700px){
+    .button a{
+        font-size: 0.688rem ;
+    }
+    p{
+        font-size: 0.563rem;
+    }
+ }
+
+
 
 
 
