@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/*
+    Tipos de telas:
+    pequenas: até 600px
+    celular: de 600px até 768px
+    tablet: 768px até 992px
+    desktop: 992px até 1200px
+    grandes telas: acima de 1200px
+
+*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    section#login {
+        width: 90vw;
+    }
+    section#login > div#image {
+        float: left;
+        width: 55%;
+        height: 100%;
+    }
+    section#login > div#form {
+        float: right;
+        width: 45%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    section#login {
+        width: 950px;
+    }
+    section#login > div#form {
+        float: right;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    section#login > div#image {
+        float: left;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

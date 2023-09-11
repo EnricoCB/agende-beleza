@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agende Beleza</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+   <main>
+        <section id="login">
+            <div id="image">
+                <!--imagem adicionada no css-->
+            </div>
+            <!--secao do login-->
+            <div id="form">
+               
+                <form action="login.php" method="post" autocomplete="on">
+                    <h1>Entrar</h1>
+                    <div class="campo">
+                        <i class="material-icons">person</i>
+                        <input type="email" name="login" id="ilogin" placeholder="Seu e-mail" autocomplete="email" required maxlength="30">
+                        <label for="ilogin">Login</label>
+                    </div>
+                    <div class="campo">
+                        <i class="material-icons">vpn_key</i>
+                        <input type="password" name="senha" id="isenha" placeholder="Sua senha" autocomplete="current-password" required minlength="8" maxlength="25">
+                        <label for="isenha">Senha</label>
+                    </div>
+                    <div>
+                        <a class="recuperar-senha" href="recuperarsenha.html">Esqueceu a senha</a>
+                    </div>
+                    <div>
+                        <button class="btn-login">Entrar</button>
+                    </div>
+                    <div>
+                        <a class="criar-cliente" href="cadastro_cliente.html">Criar uma conta</a>
+                    </div>
+                    <div>
+                        <a class="criar-fornecedor" href="cadastro_fornecedor.html">Criar uma conta como fornecedor</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+   </main>
+</body>
+</html>
