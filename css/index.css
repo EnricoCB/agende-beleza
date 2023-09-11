@@ -1,7 +1,4 @@
 
-img{
-    width: 10vw;
-}
 
 .categorias{
     display: flex;
@@ -11,6 +8,12 @@ img{
     overflow: auto;
     gap: 40px;
     
+}
+
+@media (max-width: 600px){
+    .categorias{
+        gap: 10px;
+    }    
 }
 
 .categorias > div > img{
@@ -25,12 +28,26 @@ img{
     justify-content: center;
     justify-items: center;
     padding: 30px;
+    row-gap: 3em;
+    column-gap: 3em;
+}
+
+@media (max-width: 1200px){
+    .saloes{
+        grid-template-columns: 1fr;
+    }
 }
 
 .imagens-saloes{
     width: 26rem;
     height: 16rem;
     object-fit: cover;
+}
+
+@media (max-width: 600px){
+    .imagens-saloes{
+        width: 40vw;
+    } 
 }
 
 .imagens-estrelas{
@@ -41,10 +58,15 @@ img{
 .card-conteudo{
     margin-left: 2rem;
 }
+@media (max-width: 600px){
+    .card-conteudo{
+        margin-left: 1rem;
+    }
+       
+}
 
 .text-card-conteudo{
     align-items: center;
-    
     display: flex;
 }
 
@@ -53,6 +75,13 @@ img{
     gap: 0.6rem;
     align-items: center;
     display: flex;
+}
+
+
+@media (max-width: 600px){
+    .text-avaliacao{
+        margin-left: 1em;
+    }   
 }
 
 .card-saloes{

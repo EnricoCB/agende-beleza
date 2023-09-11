@@ -7,12 +7,8 @@
     text-decoration: none;
 }
 
-#logo{
-    width: 3vw;
-}
-
 header{
-    background-color: #30B8A8;
+    background-color: #07485d;
     padding:3rem 2em 2em 2em;
 }
 
@@ -29,22 +25,64 @@ nav{
     
 }
 
-ul{
+.lista-menu-nav{
     display: flex;
     list-style: none;
     gap: 10vw;
 }
 
-li{
+.itens-menu{
     color: #ffffff;
 }
 
 .img-header{
-    width: 2.4vw;
+    width: 2em;
+    margin: 0 10px;
 }
 
+@media (max-width: 600px){
+    .lista-menu-nav{
+        display: none;
+        
+    }    
+}
+
+@media (max-width: 600px){
+    header{
+        background-color: #07485d;
+        padding: 3em 1em 1em 1em;
+    }
+}
+
+
+@media (max-width: 600px){
+    .header-busca{
+        justify-content: space-between;
+    }
+      
+}
+
+@media (max-width: 600px){
+    nav{
+        justify-content: flex-start;
+    }    
+}
+
+@media (min-width: 600px){
+    .img-menu{
+        display: none;
+    }    
+}
+
+
+.img-menu {
+    width: 26px;
+    margin: 0 10px;
+}
+
+
 .busca-header{
-    background-image: url("Imagens/lupa.svg");
+    background-image: url("/Imagens/lupa.svg");
     padding: 0.3rem;
     background-size: 1.6rem;
     padding-left: 3em;
