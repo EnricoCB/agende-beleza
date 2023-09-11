@@ -59,3 +59,9 @@ div#form {
 div {
     text-align: center;
 }
+.btn-login {
+    background-color: #30B8A8;
+    width: 60%;
+    height: 60%;
+    border-radius: 15px;
+}
