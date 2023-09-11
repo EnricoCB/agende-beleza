@@ -35,10 +35,16 @@ nav{
     color: #ffffff;
 }
 
+
 .img-header{
     width: 2em;
     margin: 0 10px;
 }
+
+#logo{
+    width: 4em;
+}
+
 
 @media (max-width: 600px){
     .lista-menu-nav{

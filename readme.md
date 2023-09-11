@@ -1,5 +1,7 @@
 # Proz educação – Grupo 8 -  AgendeBeleza
 
+![Logo](/Imagens/logo.png)
+
 ## Curso introdução a programação web - Professor: Randerson
 
 ### Tecnologias utilizadas:
