@@ -24,7 +24,24 @@
 
 .titulo-categorias{
     font-weight: bold;
-    text-align: centergi;
+    text-align: center;
+}
+
+.link-imagens{
+    padding: 0.6em;
+    text-decoration: none;
+    color: #000;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.link-imagens:hover{
+    transition: 400ms;
+    background: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transform: scale(1.01);
+    
+    
 }
 
 .saloes{
@@ -35,6 +52,12 @@
     padding: 30px;
     row-gap: 3em;
     column-gap: 3em;
+}
+
+@media (max-width: 1200px){
+    .saloes{
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 1200px){
@@ -97,10 +120,6 @@
     }   
 }
 
-.card-saloes{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
 
 .card-saloes > * {
     grid-row: 2;
