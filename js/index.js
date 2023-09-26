@@ -1,4 +1,4 @@
-const saloes = [
+export const saloes = [
     {
         imagem: "/Imagens/corte-homem.jpg",
         nome: "Barbearia Black",
@@ -31,8 +31,9 @@ const saloes = [
 ]
 
 
-
 const section = document.querySelector(".saloes")
+
+
 
 saloes.forEach((text, i) => {
     const div = document.createElement('div')
@@ -59,12 +60,12 @@ saloes.forEach((text, i) => {
     section.appendChild(div)
 })
 
-const a = document.querySelectorAll(".link-imagens")
-a.forEach((element) =>{
-    element.addEventListener("click", () =>{
-        let num = element.id.match(/\d+/)[0]
-        const salao = saloes[Number(num)]
-        export default saloes
-    })
+// const a = document.querySelectorAll(".link-imagens")
+// a.forEach((element) =>{
+//     element.addEventListener("click", () =>{
+//         let num = element.id.match(/\d+/)[0]
+//         const salao = saloes[Number(num)]
+//         export default saloes
+//     })
 
-})
+// })
