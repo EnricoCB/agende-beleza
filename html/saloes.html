@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/saloes.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/saloes.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Qwitcher+Grypen:wght@700&display=swap" rel="stylesheet">
-    <script type="module" src="/js/saloes.js" defer></script>
+    <script type="module" src="../js/saloes.js" defer></script>
 </head>
 <body>
 
     <header>
         <div class="header-busca">
-            <a href="index.html"><img src="/Imagens/logo.png" id="logo" class="img-header"  alt="Logo"></a>
+            <a href="index.html"><img src="../Imagens/logo.png" id="logo" class="img-header"  alt="Logo"></a>
             <input type="text" class="busca-header">
-            <a href="cadastro_cliente.html"><img src="/Imagens/entrar.svg" class="img-header" alt="Entrar"></a>
+            <a href="cadastro_cliente.html"><img src="../Imagens/entrar.svg" class="img-header" alt="Entrar"></a>
         </div>
         
         <nav>
@@ -28,7 +28,7 @@
                 <a href="#" class="link-header"><li class="itens-menu">Quem Somos</li></a>
                 <a href="#" class="link-header"><li class="itens-menu">Categorias</li></a>
             </ul>
-            <a href="index.html"><img src="/Imagens/menu.svg" class="img-menu" alt="Logo"></a>
+            <a href="index.html"><img src="../Imagens/menu.svg" class="img-menu" alt="Logo"></a>
         </nav>
     </header>
 
@@ -37,94 +37,91 @@
             <section class="salao">
                 <h1>Studio Sublime</h1>
                 <div class="container-imagens">
-                    <img src="/Imagens/corte-homem2.jpg" alt="" class="imagem-principal">
+                    <img src="../Imagens/corte-homem2.jpg" alt="" class="imagem-principal">
                     <div class="galeria">
-                        <img src="/Imagens/corte-homem.jpg" alt="" class="imagens-secundarias">
-                        <img src="/Imagens/corte-homem3.jpg" alt="" class="imagens-secundarias">
-                        <img src="/Imagens/corte-homem4.jpg" alt="" class="imagens-secundarias">
-                        <img src="/Imagens/corte-homem5.jpg" alt="" class="imagens-secundarias">
-                        <img src="/Imagens/corte-homem6.jpg" alt="" class="imagens-secundarias">
+                        <img src="../Imagens/corte-homem.jpg" alt="" class="imagens-secundarias">
+                        <img src="../Imagens/corte-homem3.jpg" alt="" class="imagens-secundarias">
+                        <img src="../Imagens/corte-homem4.jpg" alt="" class="imagens-secundarias">
+                        <img src="../Imagens/corte-homem5.jpg" alt="" class="imagens-secundarias">
+                        <img src="../Imagens/corte-homem6.jpg" alt="" class="imagens-secundarias">
                     </div>
                 </div>
             </section>
 
-        <section>
+
+
+
+        <section id="horarios">
             <h1>Horários</h1>
-            <table class="horarios">
-                <tr>
-                  <th>Seg</th>
-                  <th>Ter</th>
-                  <th>Qua</th>
-                  <th>Qui</th>
-                  <th>Sex</th>
-                </tr>
-                <tr>
-                  <td><button class="agendado">07:00</button></td>
-                  <td><button>07:00</button></td>
-                  <td><button>07:00</button></td>
-                  <td><button>07:00</button></td>
-                  <td><button class="agendado">07:00</button></td>
-                </tr>
-                <tr>
-                  <td><button>07:30</button></td>
-                  <td><button class="agendado">07:30</button></td>
-                  <td><button>07:30</button></td>
-                  <td><button>07:30</button></td>
-                  <td><button>07:30</button></td>
-                </tr>
-                <tr>
-                    <td><button>08:00</button></td>
-                    <td><button>08:00</button></td>
-                    <td><button>08:00</button></td>
-                    <td><button>08:00</button></td>
-                    <td><button>08:00</button></td>
-                </tr>
-                <tr>
-                    <td><button>08:30</button></td>
-                    <td><button>08:30</button></td>
-                    <td><button>08:30</button></td>
-                    <td><button>08:30</button></td>
-                    <td><button>08:30</button></td>
-                </tr>
-                <tr>
-                    <td><button>09:00</button></td>
-                    <td><button>09:00</button></td>
-                    <td><button>09:00</button></td>
-                    <td><button>09:00</button></td>
-                    <td><button>09:00</button></td>
-                </tr>
-                <tr>
-                    <td><button>09:30</button></td>
-                    <td><button>09:30</button></td>
-                    <td><button>09:30</button></td>
-                    <td><button>09:30</button></td>
-                    <td><button>09:30</button></td>
-                </tr>
-                <tr>
-                    <td><button>10:00</button></td>
-                    <td><button>10:00</button></td>
-                    <td><button class="agendado">10:00</button></td>
-                    <td><button>10:00</button></td>
-                    <td><button>10:00</button></td>
-                </tr>
-                <tr>
-                    <td><button>10:30</button></td>
-                    <td><button>10:30</button></td>
-                    <td><button>10:30</button></td>
-                    <td><button class="agendado">10:30</button></td>
-                    <td><button>10:30</button></td>
-                </tr>
-                <tr>
-                    <td><button>10:30</button></td>
-                    <td><button>10:30</button></td>
-                    <td><button>10:30</button></td>
-                    <td><button>10:30</button></td>
-                    <td><button>10:30</button></td>
-                </tr>
-              </table>
-              <div class="container-button">
-                <button class="button-agendar">Agendar</button>
-              </div>
+            <div class="botoes-horarios">
+                <div class="linha-horarios">
+                    <p>seg</p>
+                    <p>ter</p>
+                    <p>qua</p>
+                    <p>qui</p>
+                    <p>sex</p>
+                </div>
+                <form action="" method="post">
+                    <div class="linha-horarios">
+                        <button class="botao-horarios">7:00</button>
+                        <button class="botao-horarios">7:00</button>
+                        <button class="botao-horarios">7:00</button>
+                        <button class="botao-horarios">7:00</button>
+                        <button class="botao-horarios">7:00</button>
+                    </div>
+                    <div class="linha-horarios">
+                        <button class="botao-horarios">8:00</button>
+                        <button class="botao-horarios">8:00</button>
+                        <button class="botao-horarios">8:00</button>
+                        <button class="botao-horarios">8:00</button>
+                        <button class="botao-horarios">8:00</button>
+                    </div>
+                    <div class="linha-horarios">
+                        <button class="botao-horarios">9:00</button>
+                        <button class="botao-horarios">9:00</button>
+                        <button class="botao-horarios">9:00</button>
+                        <button class="botao-horarios">9:00</button>
+                        <button class="botao-horarios">9:00</button>
+                    </div>
+                    <div class="linha-horarios">
+                        <button class="botao-horarios">10:00</button>
+                        <button class="botao-horarios">10:00</button>
+                        <button class="botao-horarios">10:00</button>
+                        <button class="botao-horarios">10:00</button>
+                        <button class="botao-horarios">10:00</button>
+                    </div>
+                    <div class="linha-horarios">
+                        <button class="botao-horarios">11:00</button>
+                        <button class="botao-horarios">11:00</button>
+                        <button class="botao-horarios">11:00</button>
+                        <button class="botao-horarios">11:00</button>
+                        <button class="botao-horarios">11:00</button>
+                    </div>
+                    <div class="linha-horarios">
+                        <button class="botao-horarios">13:00</button>
+                        <button class="botao-horarios">13:00</button>
+                        <button class="botao-horarios">13:00</button>
+                        <button class="botao-horarios">13:00</button>
+                        <button class="botao-horarios">13:00</button>
+                    </div>
+                    <div class="linha-horarios">
+                        <button class="botao-horarios">14:00</button>
+                        <button class="botao-horarios">14:00</button>
+                        <button class="botao-horarios">14:00</button>
+                        <button class="botao-horarios">14:00</button>
+                        <button class="botao-horarios">14:00</button>
+                    </div>
+                    <div class="linha-horarios">
+                        <button class="botao-horarios">15:00</button>
+                        <button class="botao-horarios">15:00</button>
+                        <button class="botao-horarios">15:00</button>
+                        <button class="botao-horarios">15:00</button>
+                        <button class="botao-horarios">15:00</button>
+                    </div>
+                    <div class="linha-horarios">
+                        <button class="button-agendar">Agendar</button>
+                    </div>
+            </form>
         </section>
 
         <section>
@@ -142,7 +139,7 @@
                     <div class="container-avaliacao">
                         <h3>Pedro</h3>
                         <p>5</p>
-                        <img src="/Imagens/Star.svg" alt="">
+                        <img src="../Imagens/Star.svg" alt="">
                     </div>
                     <div class="container-comentario">
                         <p>Ambiente agradavel e satisfatorio, recomendo para todos</p>
@@ -154,7 +151,7 @@
                     <div class="container-avaliacao">
                         <h3>Letícia</h3>
                         <p>5</p>
-                        <img src="/Imagens/Star.svg" alt="">
+                        <img src="../Imagens/Star.svg" alt="">
                     </div>
                     <div class="container-comentario">
                         <p>Atendimento dentro do horario estabelecido, profissionais qualificados e atenciosos, recomendo esse salão</p>
@@ -166,6 +163,8 @@
 
             
         </section>
+
+        <h1 id="teste"></h1>
     </main>
 </body>
 </html>

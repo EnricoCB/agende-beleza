@@ -88,15 +88,6 @@ th{
 }
 
 
-td > button{
-    color: #fff;
-    font-size: 1rem;
-    border: 0px;
-    padding: 12px 18px;
-    background-color: #605249;
-    cursor: pointer;
-    margin-bottom: 4px;
-}
 
 
 @media (max-width: 600px){
@@ -110,10 +101,6 @@ td > button{
     background-color: #B0B0B0;
 }
 
-.container-button{
-    display: flex;
-    justify-content: center;
-}
 
 .button-agendar{
     font-size: 1rem;
@@ -195,4 +182,33 @@ td > button{
 
 .container-descricao{
     
+}
+
+.botoes-horarios{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.linha-horarios{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.botao-horarios {
+    width: 5em;
+    color: #fff;
+    font-size: 1rem;
+    border: 0px;
+    padding: 12px 18px;
+    background-color: #605249;
+    cursor: pointer;
+    margin-bottom: 4px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+#horarios{
+    width: 500px;
+    justify-self: center;
 }
