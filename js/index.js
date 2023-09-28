@@ -1,38 +1,7 @@
-export const saloes = [
-    {
-        imagem: "/Imagens/corte-homem.jpg",
-        nome: "Barbearia Black",
-        nota: "5",
-        categoria1: "Cortes",
-        categoria2: "Sobrancelha",
-    },
-    {
-        imagem: "/Imagens/corte-homem4.jpg",
-        nome: "Linicker",
-        nota: "5",
-        categoria1: "Cortes",
-        categoria2: "Barba",
-    },
-    {
-        imagem: "/Imagens/maquiagem3.jpg",
-        nome: "Studio sublime",
-        nota: "5",
-        categoria1: "Maquiagem",
-        categoria2: "Unhas",
-    },
-    {
-        imagem: "/Imagens/salao.jpg",
-        nome: "Salão Modas",
-        nota: "5",
-        categoria1: "Sobrancelha",
-        categoria2: "Maquiagem",
-    }
-
-]
+import {saloes} from '../js/api.js';
 
 
 const section = document.querySelector(".saloes")
-
 
 
 saloes.forEach((text, i) => {
@@ -60,12 +29,27 @@ saloes.forEach((text, i) => {
     section.appendChild(div)
 })
 
-// const a = document.querySelectorAll(".link-imagens")
-// a.forEach((element) =>{
-//     element.addEventListener("click", () =>{
-//         let num = element.id.match(/\d+/)[0]
-//         const salao = saloes[Number(num)]
-//         export default saloes
-//     })
+let salaoSelecionado
 
-// })
+function setSalaoSelecionado(salao) {
+    salaoSelecionado = salao;
+}
+  
+function getSalaoSelecionado() {
+    return salaoSelecionado;
+}
+
+
+const a = document.querySelectorAll(".link-imagens")
+a.forEach((element) =>{
+    element.addEventListener("click", () =>{
+        let num = element.id.match(/\d+/)[0]
+        const salao = saloes[Number(num)]
+        setSalaoSelecionado(salao)
+    })
+
+})
+
+let salao = getSalaoSelecionado()
+
+export default salao
