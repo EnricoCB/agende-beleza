@@ -21,7 +21,7 @@
 // ]
 
 
-import salao from '../js/index.js';
-console.log(salao)
+import {getSalao} from '../js/elemento.js';
+console.log(getSalao())
 
 const sectionHorarios = document.querySelector("#horarios")
