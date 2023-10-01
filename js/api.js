@@ -26,6 +26,7 @@ export const saloes = [
         nota: "5",
         categoria1: "Sobrancelha",
         categoria2: "Maquiagem"
-    }
+    },
+    
 
 ]

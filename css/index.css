@@ -28,6 +28,7 @@
 }
 
 .link-imagens{
+    cursor: pointer;
     padding: 0.6em;
     text-decoration: none;
     color: #000;

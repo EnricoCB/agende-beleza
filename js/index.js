@@ -8,7 +8,7 @@ saloes.forEach((text, i) => {
     const div = document.createElement('div')
     div.className = 'card-saloes'
     div.innerHTML = `
-    <a  href="../html/saloes.html" class="link-imagens" id="link-imagens${i}">
+    <a class="link-imagens" id="link-imagens${i}">
         <img src="${text.imagem}" alt="imagens do salão" class="imagens-saloes">
         <div class="card-conteudo">
             <div class="text-card-conteudo">
