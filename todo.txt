@@ -1,10 +1,11 @@
 Necessarios:
-    deixar o botão de marcar horario clicavel e pegando o id exato do horario
-    clicar no card do salão e injetar as informações com base no card clicado incluindo o mapa
-    clicar no card categoria e abrir a recomendação com base nas tags
-    fazer um passador de imagens para a pagina salões
-    fazer um passador de imagens para a pagina index seção categorias
+    #*deixar o botão de marcar horario clicavel e pegando o id exato do horario
+    *clicar no card do salão e injetar as informações com base no card clicado incluindo o mapa
+    *clicar no card categoria e abrir a recomendação com base nas tags
+    *fazer um passador de imagens para a pagina salões
+    *fazer um passador de imagens para a pagina index seção categorias
     arrumar o input de comentarios
+    *arrumar os layouts das paginas de fornecedor
 
 
 não Necessarios
