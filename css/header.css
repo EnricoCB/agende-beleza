@@ -9,7 +9,7 @@
   }
   
   header {
-    background-color: #07485d;
+    background-color: #1ea797;
     padding: 3rem 2em 2em 2em;
   }
   
@@ -63,7 +63,7 @@
   
   @media (max-width: 600px) {
     header {
-      background-color: #07485d;
+      background-color: #1ea797;
       padding: 3em 1em 1em 1em;
     }
   }
