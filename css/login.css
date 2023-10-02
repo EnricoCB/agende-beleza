@@ -1,15 +1,148 @@
-.form-login{
-    background-color: rgb(228, 247, 239);
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,100;0,300;0,400;0,700;1,100&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,500&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+
+}
+
+body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1ea797;
+    padding-bottom: 2%;
+    height: 100vh;
+
+}
+.container{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    border-radius: 0.938rem;
+    background: white;
+    margin-top: 3%;
+}
+.image{
+    width: 80%;
+    padding: 1rem;
+    border-top-left-radius: 0.938rem;
+    border-bottom-left-radius: 0.938rem;
+    background: #30BBAB;
+   
+   
+}
+.img{
+    width: 100%;
+    height: 90%;
+}
+
+p{
+    color: white;
+    text-align: center;
+    font-size: 0.875rem;
+    font-weight: 300;
+    margin-top: 1%  ;   
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1.25rem;
+}
+.title{
+    text-align: center;
+    margin-bottom: 1.25rem;
+    color: #118174;
+}
+.button{
+   text-align: center;
+   width: 30%;
+   border-radius: 0.5rem;
+   padding: 2%;
+   margin-top: 4%;
+   margin-right: 25%;
+   margin-left: 35%;
+   margin-bottom: 1%;
+   background: #118174;
+   color: #fff;
+   border: 0;
+   cursor: pointer;
+   
+}
+
+.button a{
+    text-decoration: none;
+    color : white;
     
-    padding-top: 40px;
-    padding-bottom: 45px;
-    padding-right: 80px;
-    padding-left: 80px;
+}
 
-    margin-top: 250px;
-    margin-bottom: 400px;
-    margin-right: 500px;
-    margin-left: 500px;
+.button:hover{
+    background: #1ea797;
+}
 
-    border: 8px solid rgb(219, 228, 236);
+.input-box input{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border: none;
+    border-radius: 0.625rem;
+    padding: 2%;
+    background: rgb(233,224, 224);
+    width: 100%;
+}
+.input-box input:focus-visible{
+    outline: 1px solid rgb(233, 224, 224)
+}
+
+@media only screen and (max-width: 500px) {
+   .container{
+    width: 80%;
+   }
+  .form{
+    padding:0.625rem;
+    border-radius: 0.938rem;
+    
+   }
+   .title{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+   }
+   .input-box input{
+    margin-bottom: 1%;
+   }
+   .image {
+    display: none;
+   }
+   .button{
+    margin-top: 8%;
+   }
+}
+ @media only screen and (max-width: 700px){
+    .button a{
+        font-size: 0.688rem ;
+    }
+    p{
+        font-size: 0.563rem;
+    }
+ }
+
+
+
+
+
+
+.opcoes{
+    text-align: center;
+}
+
+.text-opcoes{
+    text-decoration: none;
+    color: #118174;
+    font-weight: bold;
 }
