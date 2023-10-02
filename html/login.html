@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <title>Cadastro de cliente</title>
     <link rel="stylesheet" href="../css/login.css">
+    <script src="../js/login.js" defer></script>
 </head>
 <body>
     <div class = "container">
@@ -12,8 +13,8 @@
                 <img class="img"  src="../Imagens/cadastroCliente.svg" alt="imagem no cadastro">
                 <p>Cadastre-se para usar as funcionalidades do site</p>
             </div>
-            <div class="form">
-                <form action="index.html" method="post">
+            <div class="form" >
+                <form action="index.html" method="post" id="formulario">
                     <div class="title">
                         <h2> Entrar</h2>
                     </div>
@@ -21,21 +22,23 @@
                     <div class="input">
                         
                     
-                        <div class=" input-box">
+                        <div class="input-box">
                             <!--<label for="email">E-mail:</label>-->
-                            <input id="email" name="email" placeholder="E-mail" type="email" size="50" maxlength="100" required>
+                            <input id="email" name="email" placeholder="E-mail" type="email" size="50" maxlength="100">
+                            <a class="erro"></a>
                         </div>
                         
                         <div class="input-box">
                             <!--<label for="senha">Senha:</label>-->
-                            <input id="senha" name="senha" placeholder="Senha" type="password" size="50" maxlength="50"  required>
+                            <input id="senha" name="senha" placeholder="Senha" type="password" size="50" maxlength="50" >
+                            <a class="erro"></a>
                         </div>
                 
                         
                     </div>
 
                     
-                    <input type="submit" class="button">
+                   <button type="submit" class="button">Entrar</button>
                     <div class="opcoes">
                         <a href="../html/cadastro_cliente.html" class="text-opcoes">Criar uma conta</a>
                     </div>
