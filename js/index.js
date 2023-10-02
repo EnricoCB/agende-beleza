@@ -1,32 +1,35 @@
 import {saloes} from '../js/api.js';
+import { cria_cards } from './cria_cards.js';
 
 
 const section = document.querySelector(".saloes")
 
 
-saloes.forEach((text, i) => {
-    const div = document.createElement('div')
-    div.className = 'card-saloes'
-    div.innerHTML = `
-    <a class="link-imagens" id="link-imagens${i}">
-        <img src="${text.imagem}" alt="imagens do salão" class="imagens-saloes">
-        <div class="card-conteudo">
-            <div class="text-card-conteudo">
-                <h3>${text.nome}</h3>
-                <div class="text-avaliacao">
-                    <p>${text.nota}</p>
-                    <img src="../Imagens/Star.svg" alt="estrelas" class="imagens-estrelas">
-                </div>
-            </div>
-
-            <div class="text-card-categoria">
-            <p>${text.categoria1}</p>
-            <p>${text.categoria2}</p>
-        </div>
-        </div>
-    </a>
-    `
-    section.appendChild(div)
+saloes.forEach((salao, i) => {
+    cria_cards(section, salao, i)
 })
 
+
+const categorias = document.querySelectorAll(".categorias div")
+
+categorias.forEach((categoria) =>{
+    categoria.addEventListener("click", () => {
+        const categoriaTexto = categoria.querySelector('.titulo-categorias').textContent
+        window.location.href = `categoria.html?categoria=${categoriaTexto}`;
+    })
+})
+
+
+
+const cards = document.querySelectorAll(".link-imagens")
+ cards.forEach((element) =>{
+    element.addEventListener("click", () => {
+        let num = element.id.match(/\d+/)[0]
+        let salao = saloes[Number(num)]
+        salao = JSON.stringify(salao);
+        sessionStorage.setItem('objetoCodificado', salao);
+        window.location.href = 'saloes.html';
+    })
+
+})
 
