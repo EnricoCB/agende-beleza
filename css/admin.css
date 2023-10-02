@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  body {
+    height: 100vh;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 100px;
+    margin-top: 20px;
+  }
+  
+  .nome {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .nome span {
+    margin-bottom: 10px;
+  }
+  
+  .nome input {
+    height: 50px;
+    width: 200px;
+    border: 1px solid #000;
+    outline: none;
+    border-radius: 5px;
+    padding-left: 10px;
+  }
+  
+  .nome input::placeholder {
+    color: #a5a5a5;
+  }
+  
+  .descricao-salao {
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+  }
+  
+  .descricao-salao span {
+    margin-bottom: 10px;
+  }
+  
+  .descricao-salao input {
+    padding-left: 10px;
+    height: 100px;
+    width: 400px;
+    border: 1px solid #000;
+    outline: none;
+    border-radius: 5px;
+  }
+  
+  .descricao-salao input::placeholder {
+    color: #a5a5a5;
+  }
+  
+  .container {
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .produtos {
+    align-items: center;
+    width: 430px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .produtos span {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .produtos input {
+    margin-top: 10px;
+  }
+  .produtos .adicionar-produto {
+    cursor: pointer;
+    width: 100%;
+    background-color: #dadada;
+    height: 220px;
+  }
+  
+  .adicionar-produto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @media (max-width: 600px) {
+    main {
+      align-items: center;
+      justify-content: center;
+      margin-right: 0;
+      margin-left: 0;
+    }
+  
+    .descricao-salao input {
+      width: 250px;
+    }
+  
+    .descricao-salao {
+      text-align: center;
+    }
+  
+    .nome {
+      text-align: center;
+    }
+  
+    .container {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .produtos {
+      margin-right: 0;
+    }
+  }
+
+  input[type="checkbox"] {
+    position: relative;
+    width: 80px;
+    height: 40px;
+    -webkit-appearance: none;
+    background: #b0afaf;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
+input:checked[type="checkbox"] {
+    background: #4DD0C0;
+}
+input[type="checkbox"]:before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    background: #C7C6C6;
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
+
+input:checked[type="checkbox"]:before {
+    left: 40px;
+}

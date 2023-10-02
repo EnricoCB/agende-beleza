@@ -4,86 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/header.css">
 </head>
 <body>
     <header>
         <div class="header-busca">
-            <a href="index.html"><img src="Imagens/logo.png" class="img-header" alt="Logo"></a>
+            <a href="index.html"><img src="../Imagens/logo.png" class="img-header" id="logo" alt="Logo"></a>
             <input type="text" class="busca-header">
-            <a href="cadastro_cliente.html"><img src="Imagens/entrar.svg" class="img-header" alt="Entrar"></a>
+            <a href="../html/login.html"><img src="../Imagens/entrar.svg" class="img-header" alt="Entrar"></a>
         </div>
         
         <nav>
-            <ul>
-                <a href="#" class="link-header"><li>Salões</li></a>
-                <a href="categoria.html" class="link-header"><li>Categorias</li></a>
-                <a href="#" class="link-header"><li>Quem Somos</li></a>
-                <a href="#" class="link-header"><li>Categorias</li></a>
+            <ul class="lista-menu-nav">
+                <a href="#" class="link-header"><li class="itens-menu">Salões</li></a>
+                <a href="categoria.html" class="link-header"><li class="itens-menu">Categorias</li></a>
+                <a href="#" class="link-header"><li class="itens-menu">Quem Somos</li></a>
+                <a href="#" class="link-header"><li class="itens-menu">Categorias</li></a>
             </ul>
+            <a href="index.html"><img src="../Imagens/menu.svg" class="img-menu" alt="Logo"></a>
         </nav>
     </header>
 
     <main>
         <section class="categorias">
             <div>
-                <img src="Imagens/corte-homem.jpg" alt="Categoria corte masculino">
-                <h5>Cortes Masculinos</h5>
+                <img src="../Imagens/categorias/cortes-masculinos.webp" alt="Categoria corte masculino">
+                <p class="titulo-categorias">Cortes Masculinos</p>
             </div>
 
             <div>
-                <img src="Imagens/corte-mulher.jpg" alt="Categoria corte feminino">
-                <h5>Cortes Femininos</h5>
+                <img src="../Imagens/categorias/sobrancelha.jpg" alt="Categoria corte masculino">
+                <p class="titulo-categorias">Sobrancelhas</p>
             </div>
 
             <div>
-                <img src="Imagens/sobrancelha.jpg" alt="Categoria sobrancelha">
-                <h5>Sobrancelhas</h5>
+                <img src="../Imagens/categorias/unhas.jpg" alt="Categoria corte masculino">
+                <p class="titulo-categorias">Unhas</p>
             </div>
 
             <div>
-                <img src="Imagens/unhas.jpg" alt="Categoria unhas">
-                <h5>Unhas</h5>
+                <img src="../Imagens/categorias/cortes-femininos.webp" alt="Categoria corte feminino">
+                <p class="titulo-categorias">Cortes Femininos</p>
             </div>
         </section>
 
         <section class="saloes">
-            <div>
-               <a href="saloes.html"> <img src="Imagens/corte-homem2.jpg" alt="imagens do salão"></a>
-                <h3>Studio Sublime</h3>
-                <img src="Imagens/Star.svg" alt="icone de uma estrela">
-                </svg>
-                    
-                <p>5</p>
-                <h5>Cortes</h5>
-            </div>
-
-            <div>
-                <img src="Imagens/corte-mulher2.jpg" alt="imagens do salão">
-                <h3>Salão A</h3>
-                <img src="Imagens/Star.svg" alt="estrelas">
-                <p>5</p>
-                <h5>Cortes</h5>
-            </div>
-
-            <div>
-                <img src="Imagens/maquiagem1.jpg" alt="imagens do salão">
-                <h3>Salão A</h3>
-                <img src="Imagens/Star.svg" alt="estrelas">
-                <p>5</p>
-                <h5>Cortes</h5>
-            </div>
-
-            <div>
-                <img src="Imagens/corte-mulher3.jpg" alt="imagens do salão">
-                <h3>Salão A</h3>
-                <img src="Imagens/Star.svg" alt="estrelas">
-                <p>5</p>
-                <h5>Cortes</h5>
-            </div>
-
+            
         </section>
+        
     </main>
+    <script  type="module" src="../js/index.js" defer></script>
 </body>
 </html>

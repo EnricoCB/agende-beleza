@@ -4,64 +4,154 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="saloes.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/saloes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Qwitcher+Grypen:wght@700&display=swap" rel="stylesheet">
+    <script type="module" src="../js/saloes.js" defer></script>
 </head>
 <body>
 
     <header>
         <div class="header-busca">
-            <a href="index.html"><img src="Imagens/logo.png" class="img-header" alt="Logo"></a>
+            <a href="index.html"><img src="../Imagens/logo.png" id="logo" class="img-header"  alt="Logo"></a>
             <input type="text" class="busca-header">
-            <a href="cadastro_cliente.html"><img src="Imagens/entrar.svg" class="img-header" alt="Entrar"></a>
+            <a href="cadastro_cliente.html"><img src="../Imagens/entrar.svg" class="img-header" alt="Entrar"></a>
         </div>
         
         <nav>
-            <ul>
-                <a href="#" class="link-header"><li>Salões</li></a>
-                <a href="categoria.html" class="link-header"><li>Categorias</li></a>
-                <a href="#" class="link-header"><li>Quem Somos</li></a>
-                <a href="#" class="link-header"><li>Categorias</li></a>
+            <ul class="lista-menu-nav">
+                <a href="#" class="link-header"><li class="itens-menu">Salões</li></a>
+                <a href="categoria.html" class="link-header"><li class="itens-menu">Categorias</li></a>
+                <a href="#" class="link-header"><li class="itens-menu">Quem Somos</li></a>
+                <a href="#" class="link-header"><li class="itens-menu">Categorias</li></a>
             </ul>
+            <a href="index.html"><img src="../Imagens/menu.svg" class="img-menu" alt="Logo"></a>
         </nav>
     </header>
 
     <main>
-        <section>
-            <h1>Studio Sublime</h1>
-            <img src="Imagens/corte-homem2.jpg" alt="">
-            <div class="galeria">
-                <img src="Imagens/corte-homem2.jpg" alt="">
-                <img src="Imagens/corte-homem2.jpg" alt="">
-                <img src="Imagens/corte-homem2.jpg" alt="">
-                <img src="Imagens/corte-homem2.jpg" alt="">
-                <img src="Imagens/corte-homem2.jpg" alt="">
-            </div>
-        </section>
+        <div class="conteudo">
+            <section class="salao">
+             
+            </section>
 
-        <section>
+        <section id="horarios">
             <h1>Horários</h1>
-            <button>Agendar</button>
+            <div class="botoes-horarios">
+                <div class="linha-horarios">
+                    <p>seg</p>
+                    <p>ter</p>
+                    <p>qua</p>
+                    <p>qui</p>
+                    <p>sex</p>
+                </div>
+                <form class="form-botoes" action="" method="post">
+                    <div class="linha-horarios">
+                        <button class="botao-horarios"  type="button">7:00</button>
+                        <button class="botao-horarios"  type="button">7:00</button>
+                        <button class="botao-horarios"  type="button">7:00</button>
+                        <button class="botao-horarios"  type="button">7:00</button>
+                        <button class="botao-horarios"  type="button">7:00</button>
+                    </div>
+                    <div class="linha-horarios">
+                        <button class="botao-horarios"  type="button">8:00</button>
+                        <button class="botao-horarios"  type="button">8:00</button>
+                        <button class="botao-horarios"  type="button">8:00</button>
+                        <button class="botao-horarios"  type="button">8:00</button>
+                        <button class="botao-horarios"  type="button">8:00</button>
+                    </div>
+                    <div class="linha-horarios">
+                        <button class="botao-horarios"  type="button">9:00</button>
+                        <button class="botao-horarios"  type="button">9:00</button>
+                        <button class="botao-horarios"  type="button">9:00</button>
+                        <button class="botao-horarios"  type="button">9:00</button>
+                        <button class="botao-horarios"  type="button">9:00</button>
+                    </div>
+                    <div class="linha-horarios">
+                        <button class="botao-horarios"  type="button">10:00</button>
+                        <button class="botao-horarios"  type="button">10:00</button>
+                        <button class="botao-horarios"  type="button">10:00</button>
+                        <button class="botao-horarios"  type="button">10:00</button>
+                        <button class="botao-horarios"  type="button">10:00</button>
+                    </div>
+                    <div class="linha-horarios">
+                        <button class="botao-horarios"  type="button">11:00</button>
+                        <button class="botao-horarios"  type="button">11:00</button>
+                        <button class="botao-horarios"  type="button">11:00</button>
+                        <button class="botao-horarios"  type="button">11:00</button>
+                        <button class="botao-horarios"  type="button">11:00</button>
+                    </div>
+                    <div class="linha-horarios">
+                        <button class="botao-horarios"  type="button">13:00</button>
+                        <button class="botao-horarios"  type="button">13:00</button>
+                        <button class="botao-horarios"  type="button">13:00</button>
+                        <button class="botao-horarios"  type="button">13:00</button>
+                        <button class="botao-horarios"  type="button">13:00</button>
+                    </div>
+                    <div class="linha-horarios">
+                        <button class="botao-horarios"  type="button">14:00</button>
+                        <button class="botao-horarios"  type="button">14:00</button>
+                        <button class="botao-horarios"  type="button">14:00</button>
+                        <button class="botao-horarios"  type="button">14:00</button>
+                        <button class="botao-horarios"  type="button">14:00</button>
+                    </div>
+                    <div class="linha-horarios">
+                        <button class="botao-horarios"  type="button">15:00</button>
+                        <button class="botao-horarios"  type="button">15:00</button>
+                        <button class="botao-horarios"  type="button">15:00</button>
+                        <button class="botao-horarios"  type="button">15:00</button>
+                        <button class="botao-horarios"  type="button">15:00</button>
+                    </div>
+                    <div class="linha-horarios">
+                        <button class="button-agendar" type="submit">Agendar</button>
+                    </div>
+            </form>
         </section>
 
         <section>
             <h1>Mapa</h1>
             <div class="mapa-conteudo">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14946.220079209093!2d-54.65216094427697!3d-20.524459919366993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9486e5b25943bdf9%3A0xbefebc25e4f8bbfd!2sStudio%20Sublime!5e0!3m2!1spt-BR!2sbr!4v1691615579773!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
 				</div>
         </section>
 
         <section>
             <h1>Comentários</h1>
-            <input type="text" placeholder="Digite seu comentário">
-            <div>
-                <h3>Anonimo</h3>
-                <p>ótimo profissional</p>
-                <img src="Imagens/Star.svg" alt="">
-                <small>17/07/2023</small>
+            <div class="container-comentarios">
+                <input type="text" placeholder="Digite seu comentário" id="input-comentario">
+                <div class="container-descricao">
+                    <div class="container-avaliacao">
+                        <h3>Pedro</h3>
+                        <p>5</p>
+                        <img src="../Imagens/Star.svg" alt="">
+                    </div>
+                    <div class="container-comentario">
+                        <p>Ambiente agradavel e satisfatorio, recomendo para todos</p>
+                    </div>
+                    <small class="data-avaliacao">17/07/2023</small>
+                </div>
+
+                <div class="container-descricao">
+                    <div class="container-avaliacao">
+                        <h3>Letícia</h3>
+                        <p>5</p>
+                        <img src="../Imagens/Star.svg" alt="">
+                    </div>
+                    <div class="container-comentario">
+                        <p>Atendimento dentro do horario estabelecido, profissionais qualificados e atenciosos, recomendo esse salão</p>
+                    </div>
+                    <small class="data-avaliacao">17/07/2023</small>
+                </div>
+
             </div>
 
+            
         </section>
+
+        <h1 id="teste"></h1>
     </main>
 </body>
 </html>

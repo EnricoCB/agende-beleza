@@ -6,7 +6,6 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     width: 100%;
-
 }
 
 body{
@@ -16,7 +15,6 @@ body{
     align-items: center;
     background: #1ea797;
     padding-bottom: 2%;
-    height: 100vh;
 
 }
 .container{
@@ -41,14 +39,6 @@ body{
     height: 90%;
 }
 
-p{
-    color: white;
-    text-align: center;
-    font-size: 0.875rem;
-    font-weight: 300;
-    margin-top: 1%  ;   
-}
-
 .form{
     display: flex;
     justify-content: center;
@@ -62,7 +52,7 @@ p{
     color: #118174;
 }
 .button{
-   text-align: center;
+    text-align: center;
    width: 30%;
    border-radius: 0.5rem;
    padding: 2%;
@@ -71,15 +61,11 @@ p{
    margin-left: 35%;
    margin-bottom: 1%;
    background: #118174;
-   color: #fff;
-   border: 0;
-   cursor: pointer;
-   
 }
 
 .button a{
     text-decoration: none;
-    color : white;
+    color: white;
     
 }
 
@@ -107,7 +93,6 @@ p{
   .form{
     padding:0.625rem;
     border-radius: 0.938rem;
-    
    }
    .title{
     margin-top: 0.5rem;
@@ -123,30 +108,11 @@ p{
     margin-top: 8%;
    }
 }
- @media only screen and (max-width: 700px){
+@media only screen and (max-width: 700px){
     .button a{
         font-size: 0.688rem ;
     }
-    p{
-        font-size: 0.563rem;
-    }
- }
 
-
-
-
-
-
-.opcoes{
-    text-align: center;
 }
 
-.text-opcoes{
-    text-decoration: none;
-    color: #118174;
-    font-weight: bold;
-}
 
-.erro{
-    color: red;
-}
