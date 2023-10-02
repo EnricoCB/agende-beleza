@@ -31,7 +31,7 @@ export const saloes = [
         imagem5: "../Imagens/salao3/imagem5.webp",
         nome: "Studio sublime",
         nota: "5",
-        categoria1: "Corte Masculino",
+        categoria1: "Cortes Masculinos",
         categoria2: "Barba",
         mapa: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14946.220079209093!2d-54.65216094427697!3d-20.524459919366993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9486e5b25943bdf9%3A0xbefebc25e4f8bbfd!2sStudio%20Sublime!5e0!3m2!1spt-BR!2sbr!4v1691615579773!5m2!1spt-BR!2sbr"
     },
@@ -44,7 +44,7 @@ export const saloes = [
         nome: "Salão Modas",
         nota: "5",
         categoria1: "Unhas",
-        categoria2: "Corte Feminino",
+        categoria2: "Cortes Femininos",
         mapa: "//www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.113252419268!2d-51.49763182367422!3d-25.4010193775804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ef37e83e90708f%3A0xf65867055dc13c50!2sSal%C3%A3o%20Modas!5e0!3m2!1spt-BR!2sbr!4v1696190087275!5m2!1spt-BR!2sbr" 
     },
     
