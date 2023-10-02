@@ -22,6 +22,11 @@
     object-fit: cover;
 }
 
+.categorias > div{
+    cursor: pointer;
+}
+
+
 .titulo-categorias{
     font-weight: bold;
     text-align: center;
