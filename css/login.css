@@ -132,10 +132,20 @@ p{
     }
  }
 
+ .input-box a{
+    bottom: -8px;
+    left: 0;
+    visibility: hidden;
+}
 
-
-
-
+.input-box.error input{
+    border-color: #ff3b25;
+  }
+  
+.input-box.error a{
+color: #ff3b25;
+visibility: visible;
+}
 
 .opcoes{
     text-align: center;
@@ -145,8 +155,4 @@ p{
     text-decoration: none;
     color: #118174;
     font-weight: bold;
-}
-
-.erro{
-    color: red;
 }

@@ -8,7 +8,6 @@ formulario.addEventListener("submit", (event) => {
     validaSenha(senha);
 
     const formItems = formulario.querySelectorAll(".input-box")
-    console.log(formItems)
     const formularioValido = [...formItems].every( (item) => {
         return item.className === "input-box"
     });
@@ -19,7 +18,6 @@ formulario.addEventListener("submit", (event) => {
     
 })
 
-
 email.addEventListener("blur",() => {
     validaEmail(email);
 })
@@ -27,22 +25,19 @@ senha.addEventListener("blur",() => {
     validaSenha(senha);
 })
 
-
 function exibeErro(input, message){
     const formItem = input.parentElement;
-    console.log(formItem)
     const textMessage = formItem.querySelector("a")
-    console.log(textMessage)
+
     textMessage.innerText = message;
     formItem.className = "input-box error"
 }
-
-
 
 function validaEmail(email) {
     const emailValue = email.value.trim()
     emailInicio = emailValue.substring(0, emailValue.indexOf("@"));
     dominio = emailValue.substring(emailValue.indexOf("@")+ 1, emailValue.length);
+    debugger;
     if (emailValue === "") {
         exibeErro(email, 'Por favor, preencha o campo E-mail!')
     } else if (!((emailInicio.length >=1) &&
@@ -60,7 +55,6 @@ function validaEmail(email) {
         formItem.classList = "input-box"
     }
 }
-
 
 function validaSenha(senha) {
     const senhaValue = senha.value.trim()
