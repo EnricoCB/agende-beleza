@@ -18,14 +18,12 @@ formulario.addEventListener("submit", (event) => {
     
 })
 
-
 email.addEventListener("blur",() => {
     validaEmail(email);
 })
 senha.addEventListener("blur",() => {
     validaSenha(senha);
 })
-
 
 function exibeErro(input, message){
     const formItem = input.parentElement;
@@ -34,8 +32,6 @@ function exibeErro(input, message){
     textMessage.innerText = message;
     formItem.className = "input-box error"
 }
-
-
 
 function validaEmail(email) {
     const emailValue = email.value.trim()
