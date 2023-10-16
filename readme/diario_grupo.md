@@ -1,4 +1,4 @@
-![imagem](./Imagens/Capturar.PNG)
+![imagem](../Imagens/Capturar.PNG)
 
 ##  🔗 Atas da Reunião📑
 

@@ -2,6 +2,7 @@ const formulario = document.getElementById("formulario");
 const nome = document.getElementById('nome')
 const telefone = document.getElementById('telefone')
 const email = document.getElementById('email')
+const cnpj = document.getElementById('cnpj')
 const senha = document.getElementById('senha')
 const confirmarSenha = document.getElementById('confirmarSenha')
 
@@ -11,6 +12,11 @@ formulario.addEventListener("submit", (event) => {
     validaNome(nome);
     validaTelefone(telefone);
     validaEmail(email);
+
+    if (cnpj != null && cnpj != undefined){
+        validaCnpj(cnpj);
+    }
+
     validaSenha(senha);
     validaConfirmarSenha(confirmarSenha);
 
@@ -35,6 +41,17 @@ telefone.addEventListener("blur",() => {
 email.addEventListener("blur",() => {
     validaEmail(email);
 })
+if (cnpj != null && cnpj != undefined){
+    cnpj.addEventListener("blur",() => {
+        validaCnpj(cnpj);
+    })
+
+    /*cnpj.addEventListener("input", function (e) {
+        
+        var x = e.target.value.replace(/\D/g, '').match(/(\d{0,2})(\d{0,3})(\d{0,3})(\d{0,4})(\d{0,2})/);
+        e.target.value = !x[2] ? x[1] : x[1] + '.' + x[2] + '.' + x[3] + '/' + x[4] + (x[5] ? '-' + x[5] : '');
+      });*/
+}
 senha.addEventListener("blur",() => {
     validaSenha(senha);
 })
@@ -73,7 +90,6 @@ function validaEmail(email) {
     const emailValue = email.value.trim()
     emailInicio = emailValue.substring(0, emailValue.indexOf("@"));
     dominio = emailValue.substring(emailValue.indexOf("@")+ 1, emailValue.length);
-    debugger;
     if (emailValue === "") {
         exibeErro(email, 'Por favor, preencha o campo E-mail!')
     } else if (!((emailInicio.length >=1) &&
@@ -92,6 +108,17 @@ function validaEmail(email) {
     }
 }
 
+function validaCnpj(cnpj) {
+    const cnpjValue = cnpj.value.trim();
+    if (cnpjValue === "") {
+        exibeErro(cnpj, 'Por favor, preencha o campo CNPJ!')
+    } else if (!validaNumeroCNPJ(cnpjValue)){
+        exibeErro(cnpj, 'Por favor, preencha um CNPJ válido!')
+    } else {
+        const formItem = cnpj.parentElement
+        formItem.classList = "input-box"
+    }
+}
 
 function validaSenha(senha) {
     const senhaValue = senha.value.trim()
@@ -116,6 +143,22 @@ function validaConfirmarSenha(confirmarSenha) {
     }
 }
 
+function validaNumeroCNPJ(cnpjValue) {
+    var b = [ 6, 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2 ];
+    var c = String(cnpjValue).replace(/[^\d]/g, '');
+    if(c.length !== 14)
+        return false
+    if(/0{14}/.test(c))
+        return false
+    for (var i = 0, n = 0; i < 12; n += c[i] * b[++i]);
+    if(c[12] != (((n %= 11) < 2) ? 0 : 11 - n))
+        return false
+    for (var i = 0, n = 0; i <= 12; n += c[i] * b[i++]);
+    if(c[13] != (((n %= 11) < 2) ? 0 : 11 - n))
+        return false
+    return true
+}
+
 const trataTelefone = (event) => {
     let input = event.target
     input.value = mascaraTelefone(input.value)
@@ -126,5 +169,18 @@ const mascaraTelefone = (value) => {
     value = value.replace(/\D/g,'')
     value = value.replace(/(\d{2})(\d)/,"($1) $2")
     value = value.replace(/(\d)(\d{4})$/,"$1-$2")
+    return value
+}
+
+
+const trataCnpj = (event) => {
+    let input = event.target
+    input.value = mascaraCnpj(input.value)
+}
+
+const mascaraCnpj = (value) => {
+    if (!value) return ""
+    value = value.replace(/\D/g,'')
+    value = value.replace(/^(\d{2})(\d{3})?(\d{3})?(\d{4})?(\d{2})?/, "$1.$2.$3/$4-$5");
     return value
 }

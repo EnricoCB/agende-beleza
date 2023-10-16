@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <title>Cadastro de fornecedor</title>
     <link rel="stylesheet" href="../css/cadastro_fornecedor.css">
+    <script src="/js/cadastro.js" defer></script>
 </head>
 <body>
     <div class= "container">
@@ -11,44 +12,44 @@
             <img class="img" src="../Imagens/cadastroFornecedor.svg" alt="imagem da tela de cadastro">
         </div>
         <div class="form">
-            <form action="#" method="post">
+            <form id="formulario">
                 <div class="title">
                      <h2>Cadastro</h2>
                 </div>
                 <div class="input">
                     <div class="input-box">
-                        <input id= "nome" name="nome" placeholder="Nome Completo" type="text"  maxlength="100" required>
+                        <input id= "nome" name="nome" placeholder="Nome Completo" type="text"  maxlength="100">
+                        <a></a>
                     </div>
                     
                     <div class="input-box">
-                        <!-- <input name="ddd" placeholder="DDD" size="4" maxlength="2">-->
-                        <input id="telefone" name="telefone" placeholder="Telefone" type="tel" size="50" maxlength="9" required>
+                        <input id="telefone" name="telefone" placeholder="Telefone" type="tel" onkeyup="trataTelefone(event)" size="50" maxlength="15">
+                        <a></a>
                     </div>
                     
                     <div class="input-box">
-                        <input id="email" name="email" placeholder="E-mail" type="email" size="50" maxlength="100" required>
+                        <input id="email" name="email" placeholder="E-mail" type="email" size="50" maxlength="100">
+                        <a></a>
                     </div>
                     
                     <div class="input-box">
-                
-                        <input id="cnpj" name="cnpj" placeholder="CNPJ"  size="50" maxlength="100" required>
+                        <input id="cnpj" name="cnpj" placeholder="CNPJ"  onkeyup="trataCnpj(event)" size="50" maxlength="18">
+                        <a></a>
                     </div>
                     
                     <div class="input-box">
-                
-                        <input id="senha"   name="senha" placeholder="Senha" type="password" size="50" maxlength="50" required>
+                        <input id="senha"   name="senha" placeholder="Senha" type="password" size="50" maxlength="50">
+                        <a></a>
                     </div>
                     
                     <div class="input-box">
-                
-                        <input id="confirmarSenha" name="confirmar_senha" placeholder="Confirmar Senha" type="password" size="50" maxlength="50" required>
+                        <input id="confirmarSenha" name="confirmar_senha" placeholder="Confirmar Senha" type="password" size="50" maxlength="50">
+                        <a></a>
                     </div>
                     
                 </div>
                 <div class="button">
-                
-                    <a href="#">Cadastrar</a>
-            
+                    <button type="submit">Cadastrar</button>
                 </div>
 
             </form>
