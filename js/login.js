@@ -13,7 +13,7 @@ formulario.addEventListener("submit", (event) => {
     });
 
     if(formularioValido){
-        alert("CADASTRADO COM SUCESSO!")
+        alert("SUCESSO!")
     }
     
 })
