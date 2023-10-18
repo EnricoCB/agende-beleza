@@ -13,7 +13,6 @@
 ### Projeto
 Vamos criar uma plataforma fácil de usar para agendar serviços de estética e beleza, proporcionando aos clientes uma experiência única. Eles poderão encontrar serviços próximos, ler avaliações e ver fotos dos estabelecimentos e serviços oferecidos.
 
-:construction: Projeto  em  construção  :construction:
 ## Objetivo
 Conectar salões que desejam se destacar e aumentar sua visibilidade com pessoas em busca de facilidade para agendar horários e consultar avaliações.
 
